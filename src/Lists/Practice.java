@@ -205,4 +205,21 @@ public class Practice {
         // Вывод списка на экран после очистки
         System.out.println("Список после очистки: " + list);
     }
+
+    public static void Task9(List<String> list) {
+        // Проверка на пустоту
+        System.out.println("Task9: Проверка на пустоту списка");
+
+        list.add("Chair");
+        list.add("Table");
+        list.add("Lamp");
+
+        // Вывод списка на экран до проверки на пустоту
+        System.out.println("Список до проверки на пустоту: " + list);
+
+        // Проверка на пустоту списка
+        boolean isEmpty = list.isEmpty();
+        // Вывод результата на экран
+        System.out.println("Список пуст: " + isEmpty);
+    }
 }

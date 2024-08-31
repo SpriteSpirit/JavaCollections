@@ -6,7 +6,7 @@ import static Lists.Practice.*;
 public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        Task8(list);
+        Task9(list);
 
 
         /*
@@ -18,7 +18,7 @@ public class Main {
         Task6: Проверка на наличие элемента
         Task7: Получение размера списка
         Task8: Очистка списка
-        Task9:
+        Task9: Проверка на пустоту
          */
     }
 }
