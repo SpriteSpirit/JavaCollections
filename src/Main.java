@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
 
-        Task16(list);
+        Task20(list);
 
         /*
         Task1: Создание списка и добавление элементов (add())

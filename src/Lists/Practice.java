@@ -347,7 +347,7 @@ public class Practice {
 
     public static void Task16(List<String> list) {
         // Добавление всех элементов из массива в список
-        System.out.println("Task15: Создание изменяемого подсписка и его модификация");
+        System.out.println("Task16:  Добавление всех элементов из массива в список");
 
         // Создание массива
         String[] fruits = {"Манго", "Ананас", "Киви"};
@@ -358,5 +358,97 @@ public class Practice {
 
         System.out.println("Массив: " + Arrays.toString(fruits));
         System.out.println("Список после добавление элементов массива: " + list);
+    }
+
+    public static void Task17(List<String> list) {
+        // Проверка на наличие всех элементов из списка в массиве (Массив содержит все элементы списка)
+        System.out.println("Task17: Проверка на наличие всех элементов из списка в массиве");
+
+        // Создание массива
+        String[] fruits = {"Манго", "Ананас", "Киви"};
+        System.out.println("Массив: " + Arrays.toString(fruits));
+
+        // Создание списка
+        list.add("Ананас");
+        list.add("Киви");
+        System.out.println("Список: " + list);
+
+        // Проверка на то, что массив содержит все элементы списка
+        boolean containsAll = Arrays.asList(fruits).containsAll(list);
+
+        System.out.println("Массив содержит все элементы списка? Ответ: " + containsAll);
+    }
+
+    public static void Task18(List<String> list) {
+        // Создание неизменяемого подсписка
+        // Объяснение: Используйте Collections.unmodifiableList() для создания неизменяемого представления списка.
+        System.out.println("Task18: Создание неизменяемого подсписка");
+
+
+        // Создание списка
+        list.add("Ананас");
+        list.add("Киви");
+        list.add("Яблоко");
+        list.add("Банан");
+        list.add("Клубника");
+        list.add("Черешня");
+        System.out.println("Список: " + list);
+
+        // Создание подсписка
+        List<String> subList = Collections.unmodifiableList(list.subList(3, 6));
+        System.out.println("Подсписок: " + subList);
+
+        // Проверка на то, что подсписок неизменяемый
+//        subList.set(0, "Яблоко"); // Это вызовет UnsupportedOperationException
+
+        System.out.println("Тип подсписка: " + subList.getClass().getCanonicalName());
+
+    }
+
+    public static void Task19(List<String> list) {
+        // Преобразование списка в массив с использованием метода ссылки
+        System.out.println("Task19: Преобразование списка в массив с использованием метода ссылки");
+
+        // Создание списка
+        list.add("Ананас");
+        list.add("Киви");
+        list.add("Яблоко");
+        list.add("Банан");
+        list.add("Клубника");
+        list.add("Черешня");
+        System.out.println("Список: " + list + "\nТип списка: " + list.getClass().getCanonicalName());
+
+        // Создание массива с использованием ссылки
+        String[] array = list.toArray(String[]::new);
+
+        // Вывод массива
+        System.out.println("Массив: " + Arrays.toString(array) + "\nТип массива: "  + array.getClass().getCanonicalName());
+    }
+
+    public static void Task20(List<String> list) {
+        // Удаление всех элементов из одного списка, которые содержатся в другом removeAll()
+        System.out.println("Task19: Преобразование списка в массив с использованием метода ссылки");
+
+        // Создание первого списка
+        list.add("Ананас");
+        list.add("Клубника");
+        list.add("Яблоко");
+
+        List<String> list2 = new ArrayList<>();
+
+        // Создание второго списка
+        list2.add("Банан");
+        list2.add("Клубника");
+        list2.add("Черешня");
+
+        // Вывод исходных списков
+        System.out.println("Список 1: " + list);
+        System.out.println("Список 2: " + list2);
+
+        // Удаление элементов из первого списка, которые содержатся во втором
+        list.removeAll(list2);
+
+        // Вывод списка после удаления
+        System.out.println("Список 1 после удаления элементов второго: " + list);
     }
 }
