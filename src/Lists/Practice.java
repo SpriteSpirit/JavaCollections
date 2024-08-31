@@ -307,4 +307,19 @@ public class Practice {
         System.out.println("Содержит ли список " + firstList +
                 " элементы второго списка " + secondList + "?\nОтвет: " + containsAll);
     }
+
+    public static void Task14(List<String> list) {
+        // Преобразование списка в массив
+        System.out.println("Task14: Преобразование списка в массив");
+
+        list.add("String");
+        list.add("Integer");
+        list.add("Float");
+
+        // Преобразование списка в массив
+        String[] array = list.toArray(new String[0]);
+
+        System.out.println("Список до преобразования в массив: " + list + "\nТип: " + list.getClass().getCanonicalName());
+        System.out.println("Массив: " + Arrays.toString(array) + "\nТип: " + array.getClass().getCanonicalName());
+    }
 }
