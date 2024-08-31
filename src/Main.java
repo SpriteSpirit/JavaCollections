@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
 
-        Task20(list);
+        Task21(list);
 
         /*
         Task1: Создание списка и добавление элементов (add())
@@ -30,6 +30,7 @@ public class Main {
         Task18: Создание неизменяемого подсписка
         Task19: Преобразование списка в массив с использованием метода ссылки
         Task20: Удаление всех элементов из одного списка, которые содержатся в другом
+        Task21: Использование ListIterator для прохода с конца в начало
          */
     }
 }

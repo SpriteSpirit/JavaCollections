@@ -451,4 +451,22 @@ public class Practice {
         // Вывод списка после удаления
         System.out.println("Список 1 после удаления элементов второго: " + list);
     }
+
+    public static void Task21(List<String> list) {
+        // Использование listIterator(int index) для прохода с конца в начало
+
+        list.add("Яблоко");
+        list.add("Банан");
+        list.add("Апельсин");
+
+        System.out.println("Список: " + list);
+
+        ListIterator<String> iterator = list.listIterator(list.size());
+
+        System.out.println("Вывод каждого элемента с конца:");
+
+        while (iterator.hasPrevious()) {
+            System.out.println(iterator.previous());
+        }
+    }
 }
