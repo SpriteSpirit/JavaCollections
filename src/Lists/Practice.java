@@ -119,6 +119,38 @@ public class Practice {
         System.out.println("Список после удаления Banana: " + list);
     }
 
+    public static void Task4(List<String> list) {
+        // Изменение элемента по индексу [~~метод set(index, element)~~]
+        System.out.println("Task4: Изменение элемента по индексу");
 
+        list.add("Table");
+        list.add("Sofa");
+        list.add("Wardrobe");
 
+        // Вывод списка на экран до изменения
+        System.out.println("Список до изменения: " + list);
+
+        // Изменение элемента с индексом 1
+        list.set(1, "Chair");
+
+        // Вывод списка на экран после изменения
+        System.out.println("Список после изменения: " + list);
+    }
+
+    public static void Task5(List<String> list) {
+        // Поиск индекса элемента
+        System.out.println("Task5: Поиск индекса элемента");
+
+        list.add("Table");
+        list.add("Sofa");
+        list.add("Wardrobe");
+
+        // Вывод списка на экран до поиска индекса
+        System.out.println("Список до поиска индекса: " + list);
+
+        // Поиск индекса элемента "Sofa"
+        int index = list.indexOf("Sofa");
+        // Вывод индекса на экран
+        System.out.println("Индекс элемента Sofa: " + index);
+    }
 }
