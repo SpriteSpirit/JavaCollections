@@ -170,4 +170,23 @@ public class Practice {
         // Вывод результата на экран
         System.out.println("Содержит ли список элемента Sofa: " + contains);
     }
+
+    public static void Task7(List<String> list) {
+        // Получение размера списка
+        System.out.println("Task7: Получение размера списка");
+
+        list.add("Tablet");
+        list.add("Smart phone");
+        list.add("Laptop");
+
+        // Вывод списка на экран до получения размера
+        System.out.println("Список до получения размера: " + list);
+
+        // Получение размера списка
+        int size = list.size();
+        // Вывод размера на экран
+        System.out.println("Размер списка: " + size);
+    }
+
+
 }
