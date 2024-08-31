@@ -347,7 +347,7 @@ public class Practice {
 
     public static void Task16(List<String> list) {
         // Добавление всех элементов из массива в список
-        System.out.println("Task15: Создание изменяемого подсписка и его модификация");
+        System.out.println("Task16:  Добавление всех элементов из массива в список");
 
         // Создание массива
         String[] fruits = {"Манго", "Ананас", "Киви"};
@@ -358,5 +358,24 @@ public class Practice {
 
         System.out.println("Массив: " + Arrays.toString(fruits));
         System.out.println("Список после добавление элементов массива: " + list);
+    }
+
+    public static void Task17(List<String> list) {
+        // Проверка на наличие всех элементов из списка в массиве (Массив содержит все элементы списка)
+        System.out.println("Task17: Проверка на наличие всех элементов из списка в массиве");
+
+        // Создание массива
+        String[] fruits = {"Манго", "Ананас", "Киви"};
+        System.out.println("Массив: " + Arrays.toString(fruits));
+
+        // Создание списка
+        list.add("Ананас");
+        list.add("Киви");
+        System.out.println("Список: " + list);
+
+        // Проверка на то, что массив содержит все элементы списка
+        boolean containsAll = Arrays.asList(fruits).containsAll(list);
+
+        System.out.println("Массив содержит все элементы списка? Ответ: " + containsAll);
     }
 }
