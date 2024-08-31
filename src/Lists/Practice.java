@@ -282,4 +282,29 @@ public class Practice {
         // Вывод списка на экран после добавления
         System.out.println("Список после добавления элементов второго списка в первый: " + list);
     }
+
+    public static void Task13(List<String> firstList) {
+        // Проверка наличия вхождения элементов одного списка в другой (containsAll())
+        System.out.println("Task13: Проверка наличия вхождения элементов одного списка в другой");
+
+        firstList.add("Box");
+        firstList.add("Package");
+        firstList.add("Backpack");
+
+        List<String> secondList = new ArrayList<>();
+
+        secondList.add("Box");
+        secondList.add("Package");
+        secondList.add("Backpack");
+
+        // Вывод содержимого первого списка
+        System.out.println("Первый список:" + firstList);
+
+        // Вывод содержимого второго списка
+        System.out.println("Второй список:" + secondList);
+
+        boolean containsAll = new HashSet<>(firstList).containsAll(secondList);
+        System.out.println("Содержит ли список " + firstList +
+                " элементы второго списка " + secondList + "?\nОтвет: " + containsAll);
+    }
 }

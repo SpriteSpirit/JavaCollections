@@ -6,7 +6,7 @@ import static Lists.Practice.*;
 public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        Task12(list);
+        Task13(list);
 
 
         /*
@@ -22,7 +22,7 @@ public class Main {
         Task10: Сортировка списка (sort())
         Task11: Создание подсписка (subList())
         Task12: Добавление всех элементов из одного списка в другой (addAll())
-        Task13: Проверка наличия всех элементов (containsAll())
+        Task13: Проверка наличия вхождения элементов одного списка в другой (containsAll())
         Task14: Преобразование списка в массив (toArray())
         Task15: Создание изменяемого подсписка и его модификация
         Task16: Добавление всех элементов из массива в список
