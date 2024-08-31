@@ -14,8 +14,7 @@ public class Main {
         Queue<String> priorityQueueStr = new PriorityQueue<>();
         Deque<String> stack = new LinkedList<>();
 
-//        Task1(queueInt);
-        Task5(stack);
+        Task6(queueInt);
 
         /*
             Task1: Создание очереди и добавление элементов
@@ -24,21 +23,7 @@ public class Main {
             Task4: Использование Deque как двусторонней очереди
             Task5: Добавление и удаление элементов из двусторонней очереди
             Task6: Проверка наличия элемента в очереди
-            Task7:
-            Task8:
-            Task9:
-            Task10:
-            Task11:
-            Task12:
-            Task13:
-            Task14:
-            Task15:
-            Task16:
-            Task17:
-            Task18:
-            Task19:
-            Task20:
-            Task21:
+
          */
     }
 }

@@ -86,6 +86,9 @@ public class Practice {
     }
 
     public static void Task4(Deque<String> stack) {
+        System.out.println("Task4: Использование Deque как двусторонней очереди");
+        // Двусторонняя очередь (Deque) предоставляет полный набор методов
+        // для добавления и удаления элементов в начале и конце
         stack.addFirst("First");
         stack.add("Second");
         stack.addFirst("Third");
@@ -99,6 +102,8 @@ public class Practice {
     }
 
     public static void Task5(Deque<String> stack) {
+        System.out.println("Task5: Добавление и удаление элементов из двусторонней очереди");
+
         // Добавление и удаление элементов из двусторонней очереди
         stack.addFirst("1");
         stack.addFirst("2");
@@ -134,5 +139,22 @@ public class Practice {
             System.out.println(stack.pollLast());
         }
         System.out.println("Очередь после удаления с конца: " + stack);
+    }
+
+    public static void Task6(Queue<Integer> queue) {
+        // Проверка наличия элемента в очереди
+        System.out.println("Task6: Проверка наличия элемента в очереди");
+
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+
+        System.out.println("Есть ли 2 в очереди? " + queue.contains(2)); // true
+        System.out.println("Есть ли 4 в очереди? " + queue.contains(4)); // false
+
+        // Получение индекса первого вхождения элемента в очереди через список
+        int elementIndex = ((LinkedList<Integer>) queue).indexOf(2);
+        System.out.println("Индекс первого вхождения 2 в очереди: " + elementIndex); // 1
+
     }
 }
