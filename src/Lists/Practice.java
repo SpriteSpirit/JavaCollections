@@ -57,11 +57,10 @@ public class Practice {
         }
     }
 
-    public static void Task1() {
+    public static void Task1(List<String> list) {
         // Создание списка и добавление элементов
-        System.out.println("Создание списка и добавление элементов");
+        System.out.println("Task1: Создание списка и добавление элементов");
 
-        List<String> list = new ArrayList<>();
         list.add("Apple");
         list.add("Banana");
         list.add("Peach");
@@ -69,5 +68,32 @@ public class Practice {
         // Вывод списка на экран
         System.out.println(list);
     }
+
+
+    public static void Task2(List<String> list) {
+        // Итерация по списку
+        System.out.println("Task2: Итерация по списку");
+
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Peach");
+
+        // Использование for-each
+//        for (String fruit : list) {
+//            System.out.println(fruit);
+//        }
+
+        // Использование итератора
+//        ListIterator<String> iterator = list.listIterator();
+//        while (iterator.hasNext()) {
+//            System.out.println(iterator.next());
+//        }
+
+        // Использование for i
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i));
+//        }
+    }
+
 
 }
