@@ -95,7 +95,7 @@ public class Practice {
     }
 
     public static void Task3(List<String> list) {
-        // Добавление и удаление элементов
+        // Удаление элементов
         System.out.println("Task3: Добавление и удаление элементов");
 
         list.add("Apple");
@@ -114,7 +114,7 @@ public class Practice {
         System.out.println("Список после удаления Apple: " + list);
 
         // Удаление всех вхождений элемента
-        list.remove("Banana");
+        list.remove(0);
         // Вывод списка на экран после удаления элемента
         System.out.println("Список после удаления Banana: " + list);
     }
@@ -153,4 +153,6 @@ public class Practice {
         // Вывод индекса на экран
         System.out.println("Индекс элемента Sofa: " + index);
     }
+
+
 }
