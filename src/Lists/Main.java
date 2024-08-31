@@ -1,3 +1,5 @@
+package Lists;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +12,7 @@ public class Main {
         Task21(list);
 
         /*
+        From import static Lists.Practice.*;
         Task1: Создание списка и добавление элементов (add())
         Task2: Итерация по списку (for-each, listIterator(), for-i)
         Task3: Удаление элементов (remove())
