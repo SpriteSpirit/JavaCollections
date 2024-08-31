@@ -3,7 +3,7 @@ package Lists;
 import java.util.*;
 
 public class Practice {
-    public static void main(String[] args) {
+    public static void Exercise() {
         List<String> list = new ArrayList<>();
 //        List<String> list2 = new ArrayList<>();
 
