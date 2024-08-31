@@ -1,9 +1,6 @@
 package Lists;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Practice {
     public static void main(String[] args) {
@@ -221,5 +218,27 @@ public class Practice {
         boolean isEmpty = list.isEmpty();
         // Вывод результата на экран
         System.out.println("Список пуст: " + isEmpty);
+    }
+
+    public static void Task10(List<String> list) {
+        // Сортировка списка
+        System.out.println("Task10: Сортировка списка");
+
+        list.add("Banana");
+        list.add("Peach");
+        list.add("Apple");
+
+        // Вывод списка на экран до сортировки
+        System.out.println("Список до сортировки: " + list);
+
+        // Сортировка списка в порядке возрастания
+        Collections.sort(list);
+        // Вывод списка на экран после сортировки
+        System.out.println("Список после сортировки: " + list);
+
+        // Сортировка списка в порядке убывания
+        list.sort(Collections.reverseOrder());
+        // Вывод списка на экран после сортировки в обратном порядке
+        System.out.println("Список после сортировки в обратном порядке: " + list);
     }
 }
