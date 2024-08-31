@@ -241,4 +241,23 @@ public class Practice {
         // Вывод списка на экран после сортировки в обратном порядке
         System.out.println("Список после сортировки в обратном порядке: " + list);
     }
+
+    public static void Task11(List<String> list) {
+        // Создание подсписка (subList())
+        System.out.println("Task11: Создание подсписка (subList())");
+
+        list.add("Table");
+        list.add("Chair");
+        list.add("Lamp");
+        list.add("Couch");
+        list.add("Bed");
+
+        // Вывод списка на экран до разбиения
+        System.out.println("Список до разбиения: " + list);
+
+        // Разбиение списка на подсписки по условию
+        List<String> sublist = list.subList(1, 4);
+        // Вывод подсписка на экран
+        System.out.println("Подсписок c 1 по 3 включительно: " + sublist);
+    }
 }
