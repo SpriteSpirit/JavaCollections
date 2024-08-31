@@ -260,4 +260,26 @@ public class Practice {
         // Вывод подсписка на экран
         System.out.println("Подсписок c 1 по 3 включительно: " + sublist);
     }
+
+    public static void Task12(List<String> list) {
+        // Добавление всех элементов из одного списка в другой (addAll())
+        System.out.println("Task12: Добавление всех элементов из одного списка в другой");
+
+        List<String> additionalList = new ArrayList<>();
+        additionalList.add("Bookshelf");
+        additionalList.add("Shelf");
+
+        list.add("Table");
+        list.add("Chair");
+        list.add("Lamp");
+
+        // Вывод списка на экран до добавления
+        System.out.println("Первый список до добавления второго: " + list);
+        System.out.println("Второй список: " + additionalList);
+
+        // Добавление всех элементов из additionalList в list
+        list.addAll(additionalList);
+        // Вывод списка на экран после добавления
+        System.out.println("Список после добавления элементов второго списка в первый: " + list);
+    }
 }
