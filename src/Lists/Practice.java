@@ -404,4 +404,24 @@ public class Practice {
         System.out.println("Тип подсписка: " + subList.getClass().getCanonicalName());
 
     }
+
+    public static void Task19(List<String> list) {
+        // Преобразование списка в массив с использованием метода ссылки
+        System.out.println("Task19: Преобразование списка в массив с использованием метода ссылки");
+
+        // Создание списка
+        list.add("Ананас");
+        list.add("Киви");
+        list.add("Яблоко");
+        list.add("Банан");
+        list.add("Клубника");
+        list.add("Черешня");
+        System.out.println("Список: " + list + "\nТип списка: " + list.getClass().getCanonicalName());
+
+        // Создание массива с использованием ссылки
+        String[] array = list.toArray(String[]::new);
+
+        // Вывод массива
+        System.out.println("Массив: " + Arrays.toString(array) + "\nТип массива: "  + array.getClass().getCanonicalName());
+    }
 }
