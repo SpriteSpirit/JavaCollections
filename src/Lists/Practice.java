@@ -459,7 +459,13 @@ public class Practice {
         list.add("Банан");
         list.add("Апельсин");
 
-        System.out.println("Список: " + list);
+        // System.out::println эквивалентно лямбда-выражению (x) -> System.out.println(x).
+        // Это значит, что для каждого элемента в list будет вызван метод println, и
+        // элемент будет передан этому методу в качестве аргумента.
+//        list.forEach(fruit -> System.out.println("Список: " + fruit));
+        System.out.println("Список: ");
+        list.forEach(System.out::println);
+
 
         ListIterator<String> iterator = list.listIterator(list.size());
 
@@ -468,5 +474,7 @@ public class Practice {
         while (iterator.hasPrevious()) {
             System.out.println(iterator.previous());
         }
+
+
     }
 }
