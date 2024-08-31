@@ -1,5 +1,7 @@
 ### Коллекции - это группа элементов или контейнеров, представленных в виде единого целого.
 
+![img.png](img.png)
+
 1. Любой класс, реализующий интерфейс java.lang.Collection
 2. Классы, включенные в Collection Framework
 3. Любой класс, задача которого содержать в себе ряд объектов другого класса
@@ -133,6 +135,9 @@ push() эквивалентен addFirst(), когда Deque работает к
 (FIFO - First In First Out) с использованием методов addLast() и removeFirst(), или как стек (LIFO - Last-In-First-Out) 
 с использованием методов push() и pop(). Это делает Deque гибким в использовании, 
 позволяя добавлять и удалять элементы с обоих концов.
+
+### Map - это не коллекции. Это словари
+![img_1.png](img_1.png)
 
 **Источники:**
 1. https://www.youtube.com/watch?v=H8YOHx1dLMI&list=PLY7PmJJFH5nSaAcsqTEKpzaFJe7DZUYRM
