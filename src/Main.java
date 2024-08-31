@@ -6,7 +6,7 @@ import static Lists.Practice.*;
 public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        Task14(list);
+        Task15(list);
 
 
         /*

@@ -322,4 +322,28 @@ public class Practice {
         System.out.println("Список до преобразования в массив: " + list + "\nТип: " + list.getClass().getCanonicalName());
         System.out.println("Массив: " + Arrays.toString(array) + "\nТип: " + array.getClass().getCanonicalName());
     }
+
+    public static void Task15(List<String> list) {
+        // Создание изменяемого подсписка и его модификация
+        // Объяснение: Подсписок является представлением части исходного списка, и изменения в подсписке
+        // отражаются в исходном списке.
+        System.out.println("Task15: Создание изменяемого подсписка и его модификация");
+
+        list.add("String");
+        list.add("Integer");
+        list.add("Character");
+        list.add("Double");
+        list.add("Float");
+
+        // Создание подсписка
+        List<String> sublist = list.subList(1, 4);
+
+        System.out.println("Исходный список" + list); // ["String", "Integer", "Character", "Double", "Float"]
+        System.out.println("Подсписок до изменения элемента: " + sublist);
+
+        sublist.set(0, "Boolean"); // Изменяем элемент "Integer" на "Boolean" в подсписке
+        System.out.println("Подсписок после изменения элемента: " + sublist);
+    }
+
+
 }
