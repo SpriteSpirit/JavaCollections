@@ -69,7 +69,6 @@ public class Practice {
         System.out.println(list);
     }
 
-
     public static void Task2(List<String> list) {
         // Итерация по списку
         System.out.println("Task2: Итерация по списку");
@@ -94,6 +93,32 @@ public class Practice {
 //            System.out.println(list.get(i));
 //        }
     }
+
+    public static void Task3(List<String> list) {
+        // Добавление и удаление элементов
+        System.out.println("Task3: Добавление и удаление элементов");
+
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Peach");
+
+        // Добавление элемента в конец списка
+        list.add("Pear");
+
+        // Вывод списка на экран после пополнения
+        System.out.println("Список после пополнения: " + list);
+
+        // Удаление первого вхождения элемента
+        list.remove("Apple");
+        // Вывод списка на экран после удаления элемента
+        System.out.println("Список после удаления Apple: " + list);
+
+        // Удаление всех вхождений элемента
+        list.remove("Banana");
+        // Вывод списка на экран после удаления элемента
+        System.out.println("Список после удаления Banana: " + list);
+    }
+
 
 
 }
