@@ -378,4 +378,30 @@ public class Practice {
 
         System.out.println("Массив содержит все элементы списка? Ответ: " + containsAll);
     }
+
+    public static void Task18(List<String> list) {
+        // Создание неизменяемого подсписка
+        // Объяснение: Используйте Collections.unmodifiableList() для создания неизменяемого представления списка.
+        System.out.println("Task18: Создание неизменяемого подсписка");
+
+
+        // Создание списка
+        list.add("Ананас");
+        list.add("Киви");
+        list.add("Яблоко");
+        list.add("Банан");
+        list.add("Клубника");
+        list.add("Черешня");
+        System.out.println("Список: " + list);
+
+        // Создание подсписка
+        List<String> subList = Collections.unmodifiableList(list.subList(3, 6));
+        System.out.println("Подсписок: " + subList);
+
+        // Проверка на то, что подсписок неизменяемый
+//        subList.set(0, "Яблоко"); // Это вызовет UnsupportedOperationException
+
+        System.out.println("Тип подсписка: " + subList.getClass().getCanonicalName());
+
+    }
 }
