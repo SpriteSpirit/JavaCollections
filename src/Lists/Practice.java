@@ -345,5 +345,18 @@ public class Practice {
         System.out.println("Подсписок после изменения элемента: " + sublist);
     }
 
+    public static void Task16(List<String> list) {
+        // Добавление всех элементов из массива в список
+        System.out.println("Task15: Создание изменяемого подсписка и его модификация");
 
+        // Создание массива
+        String[] fruits = {"Манго", "Ананас", "Киви"};
+        System.out.println("Список до добавление элементов массива: " + list);
+
+        // Добавление всех элементов массива в список
+        list.addAll(Arrays.asList(fruits));
+
+        System.out.println("Массив: " + Arrays.toString(fruits));
+        System.out.println("Список после добавление элементов массива: " + list);
+    }
 }

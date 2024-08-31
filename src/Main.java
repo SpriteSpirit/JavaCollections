@@ -6,8 +6,8 @@ import static Lists.Practice.*;
 public class Main {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
-        Task15(list);
 
+        Task16(list);
 
         /*
         Task1: Создание списка и добавление элементов (add())
