@@ -424,4 +424,31 @@ public class Practice {
         // Вывод массива
         System.out.println("Массив: " + Arrays.toString(array) + "\nТип массива: "  + array.getClass().getCanonicalName());
     }
+
+    public static void Task20(List<String> list) {
+        // Удаление всех элементов из одного списка, которые содержатся в другом removeAll()
+        System.out.println("Task19: Преобразование списка в массив с использованием метода ссылки");
+
+        // Создание первого списка
+        list.add("Ананас");
+        list.add("Клубника");
+        list.add("Яблоко");
+
+        List<String> list2 = new ArrayList<>();
+
+        // Создание второго списка
+        list2.add("Банан");
+        list2.add("Клубника");
+        list2.add("Черешня");
+
+        // Вывод исходных списков
+        System.out.println("Список 1: " + list);
+        System.out.println("Список 2: " + list2);
+
+        // Удаление элементов из первого списка, которые содержатся во втором
+        list.removeAll(list2);
+
+        // Вывод списка после удаления
+        System.out.println("Список 1 после удаления элементов второго: " + list);
+    }
 }
