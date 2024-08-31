@@ -1,9 +1,9 @@
 From import static Queues.Practice*;
 
-Task1:
-Task2:
-Task3:
-Task4:
+Task1: Создание очереди и добавление элементов
+Task2: Базовые операции с очередью: извлечение и просмотр
+Task3: Очередь с приоритетом (PriorityQueue)
+Task4: Реализация очереди с ограниченным размером
 Task5:
 Task6:
 Task7:
