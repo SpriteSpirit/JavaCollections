@@ -154,5 +154,20 @@ public class Practice {
         System.out.println("Индекс элемента Sofa: " + index);
     }
 
+    public static void Task6(List<String> list) {
+        // Проверка на наличие элемента
+        System.out.println("Task6: Проверка на наличие элемента");
 
+        list.add("Table");
+        list.add("Sofa");
+        list.add("Wardrobe");
+
+        // Вывод списка на экран до проверки наличия
+        System.out.println("Список до проверки наличия: " + list);
+
+        // Проверка наличия элемента "Sofa"
+        boolean contains = list.contains("Sofa");
+        // Вывод результата на экран
+        System.out.println("Содержит ли список элемента Sofa: " + contains);
+    }
 }
