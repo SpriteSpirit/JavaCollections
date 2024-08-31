@@ -188,5 +188,21 @@ public class Practice {
         System.out.println("Размер списка: " + size);
     }
 
+    public static void Task8(List<String> list) {
+        // Очистка списка
+        System.out.println("Task8: Очистка списка");
 
+        list.add("Orange");
+        list.add("Apple");
+        list.add("Banana");
+
+        // Вывод списка на экран до очистки
+        System.out.println("Список до очистки: " + list);
+
+        // Очистка списка
+        list.clear();
+
+        // Вывод списка на экран после очистки
+        System.out.println("Список после очистки: " + list);
+    }
 }
