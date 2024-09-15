@@ -1,4 +1,4 @@
-package Queues;
+package queues;
 
 import java.util.*;
 
@@ -45,7 +45,7 @@ public class Practice {
     public static void Task2(Queue<String> queue) {
         // Создание очереди и добавление элементов
         /*
-        В Java интерфейс Queue обычно реализуется через LinkedList или PriorityQueue.
+        В Java интерфейс Queue обычно реализуется через LinkedLists или PriorityQueue.
         Основные операции включают add()/offer() для добавления элементов,
         remove()/poll() для извлечения и peek() для просмотра первого элемента без удаления.
          */

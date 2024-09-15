@@ -1,4 +1,4 @@
-package SetsAndMaps;
+package sets_and_maps;
 
 import java.util.*;
 

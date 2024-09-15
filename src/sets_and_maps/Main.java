@@ -1,7 +1,7 @@
-package SetsAndMaps;
+package sets_and_maps;
 
 
-import static SetsAndMaps.Practice.Exercise;
+import static sets_and_maps.Practice.Exercise;
 
 public class Main {
     public static void main(String[] args) {

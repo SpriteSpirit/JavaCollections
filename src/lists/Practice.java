@@ -1,4 +1,4 @@
-package Lists;
+package lists;
 
 import java.util.*;
 
@@ -427,7 +427,7 @@ public class Practice {
 
     public static void Task20(List<String> list) {
         // Удаление всех элементов из одного списка, которые содержатся в другом removeAll()
-        System.out.println("Task19: Преобразование списка в массив с использованием метода ссылки");
+        System.out.println("Task20: Удаление всех элементов из одного списка, которые содержатся в другом");
 
         // Создание первого списка
         list.add("Ананас");
@@ -454,6 +454,8 @@ public class Practice {
 
     public static void Task21(List<String> list) {
         // Использование listIterator(int index) для прохода с конца в начало
+        System.out.println("Task21: Использование listIterator(int index) для прохода с конца в начало");
+
 
         list.add("Яблоко");
         list.add("Банан");
@@ -474,7 +476,5 @@ public class Practice {
         while (iterator.hasPrevious()) {
             System.out.println(iterator.previous());
         }
-
-
     }
 }

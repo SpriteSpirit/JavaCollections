@@ -1,4 +1,4 @@
-From import static Lists.Practice.*;
+From import static lists.Practice.*;
 
 Task1: Создание списка и добавление элементов (add())
 Task2: Итерация по списку (for-each, listIterator(), for-i)

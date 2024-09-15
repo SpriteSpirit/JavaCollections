@@ -1,4 +1,4 @@
-From import static Queues.Practice*;
+From import static queues.Practice*;
 
 Task1: Создание очереди и добавление элементов
 Task2: Базовые операции с очередью: извлечение и просмотр
